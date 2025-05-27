@@ -1,4 +1,4 @@
-# AI Helper Template
+# AI Helper
 # ==================
 # Universal AI collaboration system for rapid project onboarding and efficient task management
 
@@ -7,9 +7,9 @@
 
 ## 🎯 What is this?
 
-The AI Helper Template is a proven system that enables any AI assistant to rapidly understand and contribute to any project. Instead of spending 20+ minutes explaining your project context every session, AI can get oriented in under 5 minutes and immediately start productive work.
+The AI Helper is deployed in your project root and enables any AI assistant (though built for Cursor AI) to rapidly understand and contribute to any project, focus, and not lose context. Checklists are life.
 
-**Perfect for:**
+**Good for:**
 - Solo developers working with AI assistants (Cursor, ChatGPT, Claude)
 - Small teams needing consistent AI collaboration patterns
 - Anyone frustrated with repeatedly explaining project context to AI
@@ -38,13 +38,13 @@ mv template-cursorrules.md .cursorrules
 # Open in Cursor or your preferred AI-enabled editor
 ```
 
-**That's it!** Any AI opening your project will now:
+**That's it!** AI reading your project will orient immediately, serve you next steps, and stay focused:
 - Understand your project context in <5 minutes
 - Follow established collaboration patterns
 - Work through confirmed task checklists
 - Maintain organized documentation automatically
 
-## 🚀 Live Examples
+## 🚀 Ideas for workflows:
 
 See the template in action across different project types:
 
@@ -69,17 +69,12 @@ Contract analysis, document drafting, and legal research with compliance and rev
 
 ### **AI Collaboration Pattern**
 1. **Context Acquisition**: AI reads hot files in <5 minutes
-2. **Task Planning**: AI proposes 3-5 step checklists
-3. **User Confirmation**: "Here are my next steps. Shall I proceed?"
+2. **Task Planning**: AI proposes multi-step checklists
+3. **User Confirmation**: "Here are my suggested next steps. Shall I proceed?"
 4. **Execution**: AI works through confirmed checklist
-5. **Progress Tracking**: Real-time updates in WIP.md
+5. **Progress Tracking**: Real-time updates in check-list "cards" viewable in Tasks.md kanban. Fallback: Real-time updates in WIP.md
 6. **Archival**: Completed work moves to ARCHIVE/
 
-### **Self-Maintaining Documentation**
-- Automatic size limits prevent information overload
-- Completed work archives automatically
-- Decisions tracked with 30-day rolling window
-- Single source of truth for all project information
 
 ## 📋 Template Contents
 
@@ -139,13 +134,6 @@ Use the built-in checklist system in WIP.md:
 - Fully functional for most workflows
 - Perfect for simple projects or restricted environments
 
-## 🌟 Success Stories
-
-> "Cut my AI onboarding time from 30 minutes to 3 minutes. Game changer for solo development." - *Web Developer*
-
-> "Finally, a system that keeps AI context organized. No more explaining the same project details every session." - *Research Scientist*
-
-> "The checklist-driven confirmation prevents AI from going off track. Much more productive collaboration." - *Content Creator*
 
 ## 🤝 Contributing
 
@@ -169,6 +157,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Made with ❤️ by [Axia LLC](https://axia-llc.com)** - Empowering efficient AI collaboration across all project domains.
-
-*Transform your AI collaboration from chaotic to systematic. Start using the AI Helper Template today!*
+**Made with ❤️ by [Axia LLC](https://axia-edge.com)** - Enabling authenticity at scale.
