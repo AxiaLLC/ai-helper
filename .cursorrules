@@ -1,0 +1,194 @@
+# Universal AI Navigation System
+# =============================
+# Multi-Domain Project Template for AI-Enhanced Development
+
+## 🚀 SINGLE ENTRY POINT
+
+**START HERE**: Read `UNIVERSAL_AI_INSTRUCTIONS.md` for complete AI workflow and decision tree.
+
+This project uses the Universal AI Helper Template system for efficient context management and task coordination in AI-assisted development environments.
+
+## 🧠 IMMEDIATE ORIENTATION (< 5 minutes)
+
+### Step 1: Read These Hot Files
+1. **`README.md`** - Project overview, current status, AI context acquisition
+2. **`UNIVERSAL_AI_INSTRUCTIONS.md`** - Complete AI workflow and protocols
+3. **`PROJECT_PLAN.md`** - Project vision, architecture, current roadmap  
+4. **`WIP.md`** - Current work status, active problems, next steps
+5. **`CHANGE_LOG.md`** - Recent decisions and changes (last 30 days)
+
+### Step 2: Check Task Management
+- **Visual board**: Check Tasks.md Kanban board (localhost:8080 or project-specific port)
+- **File-based**: Check `project-tracker-*/02 In Progress/` for active tasks
+- **If Docker not set up**: See `TASKS_MD_SETUP.md` for installation
+- **If no Docker available**: Use file-based task management in project-tracker directories
+
+### Step 3: Follow Universal Protocol
+The `UNIVERSAL_AI_INSTRUCTIONS.md` file contains the complete decision tree for:
+- Existing session workflow
+- New feature workflow  
+- Bootstrap workflow (if files missing)
+- Task planning and confirmation patterns
+- Information temperature system (Hot/Warm/Cold)
+
+### Step 4: Access Specialized Expertise (Optional)
+- **Role-Based AI Expertise**: Use `role-toolkits/` for specialized guidance
+- **Available Roles**: Senior Dev, CTO, CSO, CEO, Product Manager, DevOps, Business Analyst
+- **Activation**: Simply request "Adopt the [Role] role" for expert-level domain guidance
+- **Use Cases**: Technical decisions, security frameworks, business strategy, implementation planning
+
+## 🎯 KEY BEHAVIORAL PRINCIPLES
+
+### Context Efficiency
+- **Read only hot information first** (3-4 files max, <5 min total)
+- **Read task files when starting task work** (detailed context and checklists)
+- **Ask before reading archives** (don't assume you need historical context)
+
+### Proactive Confirmation  
+- **Work in checklist cycles** - Create 3-5 step checklists and get user confirmation before starting
+- **Standard pattern**: "Here are my next steps. Shall I proceed?" → Wait for confirmation → Execute
+- **Update progress in real-time** in WIP.md Current Checklist section
+- **Never work without confirmation** - This is the primary communication interface
+
+### Self-Maintaining Documentation
+- **Archive completed work** from WIP.md to ARCHIVE/ folders
+- **Maintain size limits** on hot documents (2 pages max)
+- **Update task files** with progress and discoveries
+- **Single source of truth** - reference don't duplicate information
+
+## 🚨 CRITICAL RULES
+
+1. **START WITH UNIVERSAL_AI_INSTRUCTIONS.md** - Contains complete decision tree
+2. **HOT DOCS HAVE SIZE LIMITS** - Enforce 2-page maximum, archive excess
+3. **TASK FILES ARE WARM** - Read when working on specific tasks for detailed context
+4. **CONFIRM COMPLEX PLANS** - Show task checklist before executing
+5. **ARCHIVE IMMEDIATELY** - Move completed work details to ARCHIVE/ folders
+6. **NEVER DUPLICATE** - Use references between documents
+
+## 📋 BOOTSTRAP MODE (If Files Missing)
+
+**If `UNIVERSAL_AI_INSTRUCTIONS.md` doesn't exist:**
+1. Create it using template from AI Helper Template system
+2. Create `PROJECT_PLAN.md`, `WIP.md`, `CHANGE_LOG.md` using templates
+3. Set up `ARCHIVE/` directory structure
+4. Follow `TASKS_MD_SETUP.md` for task management setup
+
+**If you're seeing this but core files exist:**
+Follow the complete protocol in `UNIVERSAL_AI_INSTRUCTIONS.md` immediately.
+
+---
+
+## 🛠️ DEVELOPMENT GUIDELINES
+
+### AI Confirmation Protocol for File Operations
+
+1. **Always Ask First**: Before creating, modifying, or deleting any file, always seek explicit confirmation from the user.
+
+2. **Provide Clear Proposals**: Present detailed descriptions of intended file operations, including:
+   - File path and name
+   - File content outline
+   - Purpose of the file
+   - Expected outcome
+
+3. **Two-Phase Implementation**:
+   - Phase 1: Outline proposed changes without execution
+   - Phase 2: Only proceed after receiving explicit approval
+
+4. **Use Explicit Language**: Use phrases like:
+   - "Would you like me to create [file]?"
+   - "I can modify [file] to [purpose]. Should I proceed?"
+   - "I propose the following changes to [file]. Would you like me to implement them?"
+
+5. **Default to Non-Action**: When in doubt, default to asking rather than acting.
+
+### Project Organization Rules
+
+**File Structure**:
+1. **Follow established organization patterns** - Respect existing project structure and conventions.
+2. **Never create duplicate files** - Always check if a file exists elsewhere before creating a new one.
+3. **When moving files, use move operations only** - Use `mv` operations rather than `cp` to avoid duplication.
+4. **Maintain feature boundaries** - Keep related code organized within logical groupings.
+5. **Respect the project's directory structure** - Follow patterns established in the codebase.
+
+**Import Patterns**:
+1. **Use project-consistent import styles** - Follow existing patterns for absolute vs relative imports.
+2. **Keep imports organized by type** - Group imports in logical order:
+   - External dependencies
+   - Internal core/shared imports
+   - Feature-specific imports
+   - Local imports (from the same module/feature)
+3. **Respect module boundaries** - Only import from public APIs, not internal implementations.
+4. **Use index files for re-exports** - When appropriate, expose clean public APIs through index files.
+
+### Development Best Practices
+
+**Code Quality**:
+1. **Check for existing implementations before creating new ones** - Search the codebase first.
+2. **Mimic the existing code style** - Follow patterns in neighboring files.
+3. **Verify library usage before assuming availability** - Check package.json or equivalent before using dependencies.
+4. **Be minimally destructive** - Prefer the least destructive approach to problem-solving.
+5. **Document non-obvious decisions** - Add comments explaining why, not what.
+
+**Testing and Verification**:
+1. **Always verify functionality after changes** - Test features after modification.
+2. **Confirm imports are correctly updated** after moving files.
+3. **Verify builds pass** before considering work complete.
+4. **Follow project testing conventions** - Use established testing patterns and tools.
+
+### Domain-Specific System Rules
+
+**Multi-Tenant Applications**:
+1. **All user-facing components must respect tenant configuration** - Check for tenant awareness.
+2. **Templates must support tenant branding** - Components should be tenant-aware when applicable.
+3. **Never hardcode tenant-specific values** - Always use configuration or database values.
+
+**API and Service Integration**:
+1. **Use established infrastructure patterns** - Follow existing service integration approaches.
+2. **Don't assume external services exist** - Verify configurations and credentials before referencing them.
+3. **Respect established data flow patterns** - Follow documented workflows and processes.
+
+**Content Management Systems**:
+1. **Editor components must maintain consistent UI** - Follow established design patterns.
+2. **Content changes should follow established workflows** - Don't bypass documented processes.
+3. **Respect content lifecycle management** - Follow draft/publish/archive patterns when they exist.
+
+### File Operations
+
+1. **When searching for code, use semantic search first** - Prefer semantic search over grep for conceptual searches.
+2. **When proposing edits, provide sufficient context** - Include surrounding code to avoid ambiguity.
+3. **After editing files, verify imports are correctly updated**.
+4. **Always verify files before deletion** - Before deleting any file, explicitly check if it's the specific file that needs to be deleted, not just files with similar names.
+
+### Task-Driven Git Workflow
+
+1. **Every commit should reference a task card** - Use task ID in commit messages when task tracking is established.
+2. **Commit messages should include task context** - Reference specific checklist items completed.
+3. **Use task progress to drive commit frequency** - Commit when logical work units are completed.
+4. **Include task card reference in commit body** - Link to specific task file for context when available.
+
+**Commit Message Format** (when task tracking is available):
+```
+TYPE(task-id): Brief description
+
+- Task: [Task Card Title]
+- Progress: [Checklist item completed]
+- Context: [Why this change was made]
+- Impact: [What this enables/fixes]
+
+Refs: [path-to-task-file]
+```
+
+**Fallback Commit Format** (when no task tracking):
+```
+TYPE: Brief description
+
+- Context: [Why this change was made]
+- Impact: [What this enables/fixes]
+- Files: [Key files modified]
+```
+
+---
+
+**Remember**: This system enables rapid project understanding through information temperature management (Hot/Warm/Cold) and rich task planning with AI confirmation workflows. The power is in what it doesn't make you read AND in enabling detailed task planning when needed.
+
+**Universal Template**: This file is part of the Universal AI Helper Template system and can be deployed to any project domain. 
